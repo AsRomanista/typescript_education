@@ -1,0 +1,23 @@
+<!--Используя конструкцию if..else, напишите код, который получает число через prompt,
+а затем выводит в alert:
+1, если значение больше нуля,
+-1, если значение меньше нуля,
+0, если значение равно нулю.
+Предполагается, что пользователь вводит только числа.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let addNumber = prompt('Fill in this number');
+  let message  = (addNumber > 0) ? '1' :
+          (addNumber < 0) ? '-1' :
+                  '0';
+  alert(message);
+</script>
+</body>
+</html>
