@@ -24,30 +24,19 @@ ladder.showStep(); // 0
 
 ladder.up().up().down().showStep().down().showStep(); // показывает 1 затем 0
 Такой подход широко используется в библиотеках JavaScript.*/
-
-interface ILadder {
-    step: number;
-    up(): this;
-    down(): this;
-    showStep(): this;
-}
-
-let ladder: ILadder = {
+var ladder = {
     step: 0,
-    up() {
+    up: function () {
         this.step++;
         return this;
     },
-    down() {
+    down: function () {
         this.step--;
         return this;
     },
-    showStep: function() { // показывает текущую ступеньку
-        console.log( this.step );
+    showStep: function () {
+        console.log(this.step);
         return this;
     }
 };
-
 ladder.up().up().down().showStep().down().showStep();
-
-

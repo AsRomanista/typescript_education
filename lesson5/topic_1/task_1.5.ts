@@ -21,14 +21,19 @@ menu = {
 
 P.S. Используйте typeof для проверки, что значение свойства числовое.*/
 
+interface Menu {
+    width: number;
+    height: number;
+    title: string;
+}
 
-let menu = {
+let menu: Menu = {
     width: 200,
     height: 300,
     title: "My menu"
 };
 
-function multiplyNumeric(menu: any) : void {
+function multiplyNumeric(menu: Menu) : void {
     for (let key in menu) {
         if (typeof menu[key] === 'number') {
             menu[key] *= 2;

@@ -6,7 +6,7 @@
 Измените значение свойства name на Pete.
 Удалите свойство name из объекта.*/
 
-let user: { [key: string]: any } = {}
+let user: { [key: string]: string } = {}
 
 user.name = 'John';
 user.surname = 'Smith';
