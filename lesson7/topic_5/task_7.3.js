@@ -10,11 +10,10 @@ function filterRangeInPlace(arr, a, b) {
             i--;
         }
     }
-    return arr;
 }
 
 let arr = [5, 3, 8, 1];
 
 filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
 
-console.log( filterRangeInPlace(arr, 1, 4) ); // [3, 1]
+console.log(arr); // [3, 1]
